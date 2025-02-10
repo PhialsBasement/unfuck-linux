@@ -96,13 +96,11 @@ echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.bashrc
 
 # Python development conveniences with force flags
 echo "Setting up Python aliases..."
-echo 'alias py="python3"
-alias pip="pip3 --break-system-packages"
-alias pip3="pip3 --break-system-packages"
-alias pytest="python3 -m pytest"
-alias pyinstall="pip3 install --break-system-packages --user"
-alias pipuninstall="pip3 uninstall --break-system-packages"
-alias piplist="pip3 list --break-system-packages"' >> ~/.bashrc
+echo 'alias pip="pip3"
+alias pip3="python3 -m pip"
+alias pyinstall="python3 -m pip install --user"
+alias pipuninstall="python3 -m pip uninstall"
+alias piplist="python3 -m pip list"' >> ~/.bashrc
 
 # Rust without prompts
 if ! command -v rustc &> /dev/null; then
