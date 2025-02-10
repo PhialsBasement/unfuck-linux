@@ -1,4 +1,5 @@
 #!/bin/bash
+
 echo "Setting up development environment without the BS..."
 
 # Remove python external management restrictions first
@@ -87,13 +88,16 @@ alias gd="git diff"
 alias gc="git commit"
 alias gp="git push"
 alias gl="git pull"
+
 # Better ls
 alias ll="ls -lah"
 alias la="ls -A"
+
 # Quick directory navigation
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
+
 # Better grep
 alias grep="grep --color=auto"' >> ~/.bashrc
 
